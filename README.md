@@ -1,0 +1,3 @@
+This repository demonstrates a common but subtle bug in React Native when using the `useRef` hook with conditionally rendered child components. The bug occurs when a child component is unmounted and then remounted, leaving the `useRef` pointing to the old, unmounted instance. Accessing properties or methods of the `ref.current` can lead to unexpected errors.
+
+The `bug.js` file showcases the problematic code. The `bugSolution.js` provides a solution to this problem.
